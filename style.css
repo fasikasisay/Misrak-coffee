@@ -5,11 +5,10 @@
 }
 body{
     font-family: 'Poppins', sans-serif;
-    background: url('coffee2.png') no-repeat center center fixed;
-    background-size: cover;
-    
-
+   background:url('coffee2.png') no-repeat center center fixed;
+   background-size: cover;
 }
+
 .hero ,.types{
     height: 400px;
     display: flex;
