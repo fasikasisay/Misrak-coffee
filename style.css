@@ -14,8 +14,22 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+      border-radius: 16px;
+      padding: 30px;
+      margin: 40px 0;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
 }
 .hero .content{
     text-align: center;
     color: #fff;
+}
+.type{
+background: #5591d6;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      transition: 0.3s;
+      display:flex;
+      justify-content: center;
+      align-items: center;
 }
