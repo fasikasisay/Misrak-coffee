@@ -5,7 +5,7 @@
 }
 body{
     font-family: 'Poppins', sans-serif;
-   background:url('coffee2.png') no-repeat center center fixed;
+   background:white;
    background-size: cover;
    backdrop-filter: blur(5px);
 }
@@ -20,6 +20,18 @@ body{
       margin: 20px 10px;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
      
+}
+.types-list{
+    background-image: url('coffee2.png') cover no-repeat center;
+     height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      border-radius: 16px;
+      padding: 20px;
+      margin: 20px 10px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+
 }
 
 .hero .content{
