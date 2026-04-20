@@ -11,16 +11,16 @@
 
 <body>
 
-<div class="container mt-5">
+<section class="hero">
     <div class="glass">
 
         <h1>Complete Your Order</h1>
 
         <h3 id="coffeeName"></h3>
 
-        <input type="number" id="quantity" class="form-control my-3" value="1" min="1">
+        <input type="number" id="quantity" class="form-control" value="1" min="1">
 
-        <h4>Payment Method</h4>
+        <h4 class="mt-3">Payment Method</h4>
 
         <div class="form-check">
             <input class="form-check-input" type="radio" name="payment" value="Telebirr" checked>
@@ -40,13 +40,15 @@
         <button class="btn btn-success w-100 mt-3" onclick="placeOrder()">Place Order</button>
 
     </div>
-</div>
+</section>
+
 
 <script>
 const params = new URLSearchParams(window.location.search);
 const coffee = params.get("coffee");
 
 document.getElementById("coffeeName").innerText = "Ordering: " + coffee;
+
 function placeOrder(){
     const quantity = document.getElementById("quantity").value;
     const payment = document.querySelector('input[name="payment"]:checked').value;
@@ -69,6 +71,5 @@ function placeOrder(){
     }
 }
 </script>
-
 </body>
 </html>

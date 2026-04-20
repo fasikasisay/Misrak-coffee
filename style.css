@@ -27,6 +27,7 @@ body{
     border-radius:16px;
     color:white;
     text-align:center;
+   
 }
 
 .types-list{
@@ -53,7 +54,9 @@ body{
     margin-top:15px;
     width:100%;
 }
-
+.input{
+    margin-top: 10px;
+}
 
 a{
     color:#fff;
@@ -61,4 +64,11 @@ a{
 }
 a:hover{
     text-decoration:underline;
+}
+.success{
+    background: linear-gradient(135deg, #0f5132, #198754);
+}
+
+.fail{
+    background: linear-gradient(135deg, #842029, #dc3545);
 }
