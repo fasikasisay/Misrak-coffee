@@ -47,15 +47,26 @@ const params = new URLSearchParams(window.location.search);
 const coffee = params.get("coffee");
 
 document.getElementById("coffeeName").innerText = "Ordering: " + coffee;
-
 function placeOrder(){
     const quantity = document.getElementById("quantity").value;
     const payment = document.querySelector('input[name="payment"]:checked').value;
 
-    alert(`Order Confirmed!
-Coffee: ${coffee}
-Quantity: ${quantity}
-Payment: ${payment}`);
+    // Simulate balance check
+    const balance = Math.floor(Math.random() * 100); // fake balance
+    const price = quantity * 50; // assume 50 birr per coffee
+
+    if(balance < price){
+        window.location.href = `fail.html?coffee=${coffee}&payment=${payment}&balance=${balance}&price=${price}`;
+    } else {
+        // Redirect based on payment method
+        if(payment === "Telebirr"){
+            window.location.href = `telebirr.html?coffee=${coffee}&quantity=${quantity}`;
+        } else if(payment === "CBE Birr"){
+            window.location.href = `cbe.html?coffee=${coffee}&quantity=${quantity}`;
+        } else {
+            window.location.href = `success.html?coffee=${coffee}&quantity=${quantity}&payment=${payment}`;
+        }
+    }
 }
 </script>
 
