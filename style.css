@@ -72,3 +72,23 @@ a:hover{
 .fail{
     background: linear-gradient(135deg, #842029, #dc3545);
 }
+@media (max-width: 480px){
+    .hero{
+        min-height: 40vh;
+        border-radius:10px;
+    }
+
+    .glass{
+        padding:15px;
+        font-size:14px;
+    }
+
+    .type-card{
+        max-width:100%;
+    }
+
+    .types-list{
+        margin:15px;
+        gap:10px;
+    }
+}
